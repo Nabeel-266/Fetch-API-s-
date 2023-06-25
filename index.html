@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Location</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Font-Awesome-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- BoxIcons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <div id="main" class="container-fluid g-0">
+        <div class="getLocation">
+            <div class="latAndLng">
+                <input type="number" id="latitude" placeholder="Enter Latitude">
+                <input type="number" id="longitude" placeholder="Enter Longitude">
+            </div>
+            <div class="getLocate">
+                <button type="submit" onclick="getLocation()">Get Location</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="resultCard">
+                <div class="imgArea">
+                    <img id="flag" src="" alt="" class="img-fluid">
+                </div>
+                <div class="subject">
+                    <h2 class="country"></h2>
+                    <h4 class="capital"></h4>
+                </div>
+                <div class="description">
+                    <div class="dscpOne">
+                        <p>Population : <span class="population"></span></p>
+                    </div>
+                    <div class="dscpTwo">
+                        <p>Language : <span class="language"></span></p>
+                    </div>
+                    <div class="dscpThree">
+                        <p>Curreny : <span class="curreny"></span></p>
+                    </div>
+                    <div class="dscpFour">
+                        <p>Region : <span class="region"></span></p>
+                    </div>
+                    <div class="dscpFive">
+                        <p>Sub-Region : <span class="subRegion"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error">
+            <p class="displayError"></p>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
